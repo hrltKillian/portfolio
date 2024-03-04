@@ -59,6 +59,10 @@ footer {
     border-radius: 0px 0px 100px 100px;
 }
 
+hr {
+    display: none;
+}
+
 .sticky_menu {
     background-color: #25283D;
     color: #EFD9CE;
@@ -226,6 +230,10 @@ footer {
     footer {
         padding: 10px;
         border-radius: 0px 0px 0px 0px;
+    }
+
+    hr {
+        display: block;
     }
     
     .sticky_menu {
