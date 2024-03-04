@@ -1,0 +1,108 @@
+html {
+    font-size: 1.5rem;
+    background-color: #25283D;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #EFD9CE;
+    color: #25283D;
+
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    display: flex;
+    flex-direction: column;
+    gap: 5vw;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    color: #90E0EF;
+    text-decoration: none;
+}
+
+img {
+
+    width: 90%;
+    height: 100%;
+}
+
+h2 {
+    margin-top: 30vw;
+    margin-bottom: 15vw;
+}
+
+p {
+    font-size: 1.5rem;
+}
+
+footer {
+    background-color: #25283D;
+    color: #EFD9CE;
+    padding: 10px;
+    text-align: center;
+}
+
+.sticky_menu {
+    background-color: #25283D;
+    color: #EFD9CE;
+    padding: 10px;
+    text-align: center;
+}
+
+.sticky_menu p {
+    font-size: 2rem;
+}
+
+.profile {
+    justify-content: center;
+    gap: 2vw;
+    margin-top: 10vh;
+    text-align: center;
+    margin: 5%;
+}
+
+.logo {
+    width: 50%;
+    height: 50%;
+}
+
+.logo-content {
+    display: flex;
+    flex-direction: column;
+    gap: 8vw;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact form {
+    display: flex;
+    flex-direction: column;
+    gap: 2vw;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.contact form input {
+    width: 100%;
+    height: 15vw;
+    font-size: 1.2rem;
+}
+
+.contact form textarea {
+    width: 100%;
+    height: 100vw;
+    font-size: 1.2rem;
+}
+
+.contact form input:last-child {
+    background-color: #25283D;
+    color: #EFD9CE;
+    border-radius: 50px;
+}
