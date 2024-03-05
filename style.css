@@ -1,10 +1,10 @@
 html {
+    font-family: 'Roboto', sans-serif;
     font-size: 2vw;
     background-color: #DAF0CE;
 }
 
 body {
-    font-family: 'Roboto', sans-serif;
     background-color: #DAF0CE;
     color: #25283D;
     margin: 0;
@@ -62,6 +62,10 @@ footer {
 hr {
     display: none;
 }
+
+input::placeholder, textarea::placeholder {
+    color : #666666 ;
+ }
 
 .sticky_menu {
     background-color: #25283D;
