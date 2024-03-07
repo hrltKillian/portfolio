@@ -35,6 +35,25 @@ img {
 a {
     color: #90E0EF;
     text-decoration: none;
+    position: relative;
+}
+
+a:hover::before {
+    transform: scaleX(1);
+}
+
+a::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #EFD9CE;
+    transform: scaleX(0);
+    transform-origin: bottom left;
+    transition: transform 0.3s ease;
 }
 
 h1 {
@@ -64,9 +83,10 @@ hr {
     display: none;
 }
 
-input::placeholder, textarea::placeholder {
+input::placeholder,
+textarea::placeholder {
     font-family: 'Arial';
-    color : #666666 ;
+    color: #666666;
 }
 
 .sticky_menu {
@@ -178,14 +198,15 @@ input::placeholder, textarea::placeholder {
 }
 
 .project {
-    margin: 10vw 0vw ;
+    margin: 10vw 0vw;
 }
 
 .studies div img {
     width: 20%;
 }
 
-.studies .desktop_style, .studies .desktop_reverse_style{
+.studies .desktop_style,
+.studies .desktop_reverse_style {
     gap: 30vw;
     margin: 5vw 0vw;
 }
@@ -258,9 +279,9 @@ input::placeholder, textarea::placeholder {
         flex-direction: column;
         gap: 5vw;
     }
-    
+
     img {
-    
+
         width: 90%;
         height: 100%;
     }
@@ -269,13 +290,13 @@ input::placeholder, textarea::placeholder {
         margin-top: 20vw;
         margin-bottom: 10vw;
     }
-    
+
     h2 {
         margin-top: 30vw;
         margin-bottom: 15vw;
         scroll-margin-top: 40vw;
     }
-    
+
     p {
         font-size: 1.5rem;
     }
@@ -284,7 +305,7 @@ input::placeholder, textarea::placeholder {
         margin: 0px;
         border-radius: 0px 0px 0px 0px;
     }
-    
+
     footer {
         padding: 10px;
         border-radius: 0px 0px 0px 0px;
@@ -298,14 +319,14 @@ input::placeholder, textarea::placeholder {
         display: none;
     }
 
-    input:checked ~ nav {
-            display: block;
+    input:checked~nav {
+        display: block;
     }
 
     .sticky_menu {
         padding: 10px;
     }
-    
+
     .sticky_menu p {
         font-size: 2rem;
     }
@@ -315,11 +336,11 @@ input::placeholder, textarea::placeholder {
         position: unset;
         top: unset;
         left: unset;
-        background-color:unset;
+        background-color: unset;
         margin: unset;
         border-radius: unset;
     }
-    
+
     .image-desktop {
         display: none;
     }
@@ -330,12 +351,12 @@ input::placeholder, textarea::placeholder {
         margin-top: 10vh;
         margin: 5%;
     }
-    
+
     .logo {
         width: 50%;
         height: 50%;
     }
-    
+
     .logo-content {
         display: flex;
         flex-direction: column;
@@ -363,27 +384,28 @@ input::placeholder, textarea::placeholder {
         display: none;
     }
 
-    .desktop_style, .desktop_reverse_style {
+    .desktop_style,
+    .desktop_reverse_style {
         display: block;
     }
-    
+
     .contact form {
         gap: 2vw;
         width: 100%;
     }
-    
+
     .contact form input {
         width: 100%;
         height: 15vw;
         font-size: 1.2rem;
     }
-    
+
     .contact form textarea {
         width: 100%;
         height: 100vw;
         font-size: 1.2rem;
     }
-    
+
     .contact form input:last-child {
         border-radius: 50px;
     }
