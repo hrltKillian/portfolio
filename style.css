@@ -34,6 +34,11 @@ img {
     height: 100%;
 }
 
+img:not(.image-desktop):not(.logo):hover {
+    transition: transform 0.3s ease;
+    transform: scale(1.1);
+}
+
 a {
     color: #90E0EF;
     text-decoration: none;
@@ -165,6 +170,7 @@ textarea::placeholder {
     width: 100%;
     margin: 0%;
     padding: 0%;
+    border-radius: 0px 0px 50px 50px;
 }
 
 .desktop_style {
@@ -173,6 +179,7 @@ textarea::placeholder {
     align-items: center;
     justify-content: center;
     gap: 2vw;
+    text-align: left;
 }
 
 .desktop_reverse_style {
@@ -181,6 +188,7 @@ textarea::placeholder {
     align-items: center;
     justify-content: center;
     gap: 2vw;
+    text-align: right;
 }
 
 .logo {
