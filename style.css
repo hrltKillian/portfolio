@@ -44,6 +44,7 @@ h1 {
 h2 {
     margin-top: 15vw;
     margin-bottom: 7vw;
+    scroll-margin-top: 15vw;
 }
 
 p {
@@ -111,6 +112,7 @@ input::placeholder, textarea::placeholder {
     justify-content: center;
     text-align: center;
     gap: 2vw;
+    margin-top: -10vw;
 }
 
 .contact_socials a {
@@ -163,6 +165,7 @@ input::placeholder, textarea::placeholder {
     justify-content: center;
     align-items: center;
     padding: 5vw 5vw;
+    margin-top: -7vw;
 }
 
 .logo-line {
