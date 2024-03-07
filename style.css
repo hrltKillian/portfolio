@@ -1,3 +1,5 @@
+@import url(https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&display=swap);
+
 html {
     font-family: 'Roboto', sans-serif;
     font-size: 2vw;
@@ -90,13 +92,19 @@ textarea::placeholder {
 }
 
 .sticky_menu {
+    display: flex;
+    flex-direction: column;
     background-color: #25283D;
     color: #EFD9CE;
-    padding: 0.2vw;
+    padding: 0.1vw;
     text-align: center;
     position: sticky;
     top: 0;
     z-index: 100;
+}
+
+.sticky_menu label {
+    font-family: "Kalam", cursive;
 }
 
 .socials_mobile {
@@ -259,7 +267,7 @@ textarea::placeholder {
 }
 
 #home {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
 }
 
 #menu {
