@@ -9,12 +9,11 @@ body {
     color: #25283D;
     margin: 0;
     padding: 0;
-    
 }
 
 main {
     background-color: #EFD9CE;
-    margin: 10%;
+    margin: 3% 10% 10% 10%;
     border-radius: 0px 0px 100px 100px;
 }
 
@@ -64,8 +63,9 @@ hr {
 }
 
 input::placeholder, textarea::placeholder {
+    font-family: 'Arial';
     color : #666666 ;
- }
+}
 
 .sticky_menu {
     background-color: #25283D;
@@ -85,12 +85,36 @@ input::placeholder, textarea::placeholder {
     width: 20%;
 }
 
+.home {
+    position: relative;
+}
+
 .title_socials {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    text-align: center;
     gap: 2vw;
+    position: absolute;
+    top: 20%;
+    left: 0;
+    background-color: rgba(239, 217, 206, 0.5);
+    margin: 0px 10%;
+    border-radius: 50px;
+}
+
+.contact_socials {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 2vw;
+}
+
+.contact_socials a {
+    width: 100%;
 }
 
 .title_socials a {
@@ -103,6 +127,13 @@ input::placeholder, textarea::placeholder {
     margin-top: 5vh;
     text-align: center;
     margin: 10%;
+}
+
+.image-desktop {
+    display: inline-flex;
+    width: 100%;
+    margin: 0%;
+    padding: 0%;
 }
 
 .desktop_style {
@@ -195,7 +226,6 @@ input::placeholder, textarea::placeholder {
     border-radius: 50px;
 }
 
-
 @media (max-width: 600px) {
     html {
         font-size: 1.5rem;
@@ -247,7 +277,21 @@ input::placeholder, textarea::placeholder {
     .sticky_menu p {
         font-size: 2rem;
     }
+
+    .title_socials {
+        gap: unset;
+        position: unset;
+        top: unset;
+        left: unset;
+        background-color:unset;
+        margin: unset;
+        border-radius: unset;
+    }
     
+    .image-desktop {
+        display: none;
+    }
+
     .profile {
 
         gap: 2vw;
