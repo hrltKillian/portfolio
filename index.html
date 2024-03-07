@@ -12,14 +12,27 @@
 <body>
     <main>
         <div class="sticky_menu">
-            <p>Killian Herlant</p>
-            <nav>
+            <label id="home" for="menu">
+                <div id="menu_burger">
+                    Killian Herlant
+                    <div id="burger">
+                        <hr>
+                        <hr>
+                        <hr>
+                    </div>
+                </div>
+
+            </label>
+            <input type="checkbox" id="menu" name="menu" />
+
+
+            <nav id="burgerNav">
                 <ul>
-                    <li><a href="#me">Who am I ?</a></li>
-                    <li><a href="#knowledges">My Knowledges</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#studies">Studies</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                    <li><a onclick="closeBurgerNav()" href="#me">Who am I ?</a></li>
+                    <li><a onclick="closeBurgerNav()" href="#knowledges">My Knowledges</a></li>
+                    <li><a onclick="closeBurgerNav()" href="#projects">Projects</a></li>
+                    <li><a onclick="closeBurgerNav()" href="#studies">Studies</a></li>
+                    <li><a onclick="closeBurgerNav()" href="#contact">Contact</a></li>
                 </ul>
             </nav>
         </div>
@@ -169,5 +182,14 @@
         </footer>
     </main>
 </body>
+
+<script>
+    function closeBurgerNav() {
+        var checkbox = document.getElementById("menu");
+        if (checkbox.checked) {
+            checkbox.checked = false;
+        }
+    }
+</script>
 
 </html>

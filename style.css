@@ -68,6 +68,25 @@ input::placeholder, textarea::placeholder {
     color : #666666 ;
 }
 
+#burger hr {
+    width: 30px;
+    height: 3px;
+    background-color: #25283D;
+    margin: 5px 0px;
+}
+
+#home {
+    font-size: 1.2rem;
+}
+
+#menu {
+    visibility: hidden;
+}
+
+#menu_burger {
+    margin-top: 2vw;
+}
+
 .sticky_menu {
     background-color: #25283D;
     color: #EFD9CE;
@@ -253,6 +272,7 @@ input::placeholder, textarea::placeholder {
     h2 {
         margin-top: 30vw;
         margin-bottom: 15vw;
+        scroll-margin-top: 40vw;
     }
     
     p {
@@ -271,6 +291,26 @@ input::placeholder, textarea::placeholder {
 
     hr {
         display: block;
+    }
+
+    nav {
+        display: none;
+    }
+
+    input:checked ~ nav {
+            display: block;
+    }
+
+    #home {
+        font-size: 1rem;
+    }
+
+    #menu_burger {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        margin-top: 5vw;
     }
     
     .sticky_menu {
@@ -357,5 +397,15 @@ input::placeholder, textarea::placeholder {
     
     .contact form input:last-child {
         border-radius: 50px;
+    }
+}
+
+@media (max-width: 350px) {
+    #menu_burger {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin: 1vw;
     }
 }
