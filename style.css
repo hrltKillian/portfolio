@@ -38,11 +38,11 @@ a {
     position: relative;
 }
 
-a:hover::before {
+nav ul li a:hover::before {
     transform: scaleX(1);
 }
 
-a::before {
+nav ul li a::before {
     content: "";
     position: absolute;
     display: block;
