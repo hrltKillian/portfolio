@@ -429,7 +429,7 @@ textarea::placeholder {
     }
 
     #burger {
-        width: 10%;
+        width: 15vw;
         display: flex;
         justify-content: center;
     }
