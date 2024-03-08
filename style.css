@@ -267,11 +267,8 @@ textarea::placeholder {
     border-radius: 50px;
 }
 
-#burger hr {
-    width: 30px;
-    height: 3px;
-    background-color: #25283D;
-    margin: 5px 0px;
+#burger {
+    display: none;
 }
 
 #home {
@@ -283,6 +280,10 @@ textarea::placeholder {
 }
 
 #menu_burger {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
     margin-top: 2vw;
 }
 
@@ -403,6 +404,7 @@ textarea::placeholder {
     .desktop_style,
     .desktop_reverse_style {
         display: block;
+        text-align: center;
     }
 
     .contact form {
@@ -424,6 +426,12 @@ textarea::placeholder {
 
     .contact form input:last-child {
         border-radius: 50px;
+    }
+
+    #burger {
+        width: 10%;
+        display: flex;
+        justify-content: center;
     }
 
     #home {
