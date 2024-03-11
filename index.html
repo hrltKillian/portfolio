@@ -1,192 +1,336 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Portfolio</title>
+		<link rel="stylesheet" href="style.css" />
+		<title>Web and web mobile Developper full stack portfolio Killian Herlant</title>
+		<link rel="icon" type="image/x-icon" href="assets/smiley2.png">
+		<!--
+			
+  _      _   _   _   _                     _                     _                   _   
+ | | __ (_) | | | | (_)   __ _   _ __     | |__     ___   _ __  | |   __ _   _ __   | |_ 
+ | |/ / | | | | | | | |  / _` | | '_ \    | '_ \   / _ \ | '__| | |  / _` | | '_ \  | __|
+ |   <  | | | | | | | | | (_| | | | | |   | | | | |  __/ | |    | | | (_| | | | | | | |_ 
+ |_|\_\ |_| |_| |_| |_|  \__,_| |_| |_|   |_| |_|  \___| |_|    |_|  \__,_| |_| |_|  \__|
+                                                                                         
 
-</head>
+		-->
+		<meta name="Description" content="The perfect web developper to create, maintain or redesign a website, an e-commerce or a showcase site. Contact me to make a quote for your website !">
+		<meta name="Language" content="en-en"/>
+		<meta name="author" content="Killian Helrant"/>
+		<meta property="og:type" content="website"/>
+		<meta property="og:title" content="Web developper for your website | Contact me for more"/>
+		<meta property="og:description" content="The perfect web developper to create, maintain or redesign a website, an e-commerce or a showcase site. Contact me to make a quote for your website !">
+		<meta property="og:image" content="smiley2.png"/>
+		<meta property="og:site_name" content="killian-herlant-portfolio"/>
+		<meta name="twitter:title" content="Web developper for your website | Contact me for more"/>
+		<meta name="twitter:description" content="The perfect web developper to create, maintain or redesign a website, an e-commerce or a showcase site. Contact me to make a quote for your website !">
+		<meta name="twitter:image" content="assets/smiley2.png"/>
+		<meta name="twitter:image:alt" content="Portfolio logo"/>
+	</head>
 
-<body>
-    <main>
-        <div class="sticky_menu">
-            <label id="home" for="menu">
-                <div id="menu_burger">
-                    Killian Herlant
-                    <div id="burger">
-                        <img class="logo" src="assets/Hamburger_icon.svg.png" alt="">
-                    </div>
-                </div>
+	<body>
+		<main>
+			<div class="sticky_menu">
+				<label id="home" for="menu">
+					<div id="menu_burger">
+						<p>Killian Herlant</p>
+						<div id="burger">
+							<img class="logo" src="assets/Hamburger_icon.svg.png" alt="burger menu" />
+						</div>
+					</div>
+				</label>
+				<input type="checkbox" id="menu" name="menu" />
 
-            </label>
-            <input type="checkbox" id="menu" name="menu" />
+				<nav id="burger_nav">
+					<ul>
+						<li><a onclick="close_burger_nav()" href="#me">Who am I ?</a></li>
+						<li><a onclick="close_burger_nav()" href="#knowledges">My Knowledges</a></li>
+						<li><a onclick="close_burger_nav()" href="#projects">Projects</a></li>
+						<li><a onclick="close_burger_nav()" href="#studies">Studies</a></li>
+						<li><a onclick="close_burger_nav()" href="#contact">Contact</a></li>
+					</ul>
+				</nav>
+			</div>
+			<div class="home">
+				<div class="title_socials">
+					<a href="https://github.com/hrltKillian" target="_blank">
+						<img class="social_logo socials_desktop" src="assets/logo_github.png" alt="Github" />
+					</a>
 
+					<h1>
+						Welcome<br />
+						to my<br />
+						Portfolio
+					</h1>
 
-            <nav id="burgerNav">
-                <ul>
-                    <li><a onclick="closeBurgerNav()" href="#me">Who am I ?</a></li>
-                    <li><a onclick="closeBurgerNav()" href="#knowledges">My Knowledges</a></li>
-                    <li><a onclick="closeBurgerNav()" href="#projects">Projects</a></li>
-                    <li><a onclick="closeBurgerNav()" href="#studies">Studies</a></li>
-                    <li><a onclick="closeBurgerNav()" href="#contact">Contact</a></li>
-                </ul>
-            </nav>
-        </div>
-        <div class="home">
-            <img class="image-desktop"
-                src="https://www.journalactionpme.com/wp-content/uploads/2022/04/confiance-en-soijpg.jpg" alt="">
-            <div class="title_socials">
-                <a href="https://www.instagram.com/hrlt.kiki/?hl=fr" target="_blank"><img
-                        class="social_logo socials_desktop" src="assets/Instagram_icon.png.webp" alt="Instagram"></a>
+					<a href="https://www.instagram.com/hrlt.kiki/?hl=fr" target="_blank">
+						<img class="social_logo socials_desktop" src="assets/Instagram_icon.png.webp" alt="Instagram" />
+					</a>
+				</div>
+			</div>
+			<div class="profile">
+				<div>
+					<div class="socials_mobile">
+						<a href="https://www.instagram.com/hrlt.kiki/?hl=fr" target="_blank">
+							<img class="social_logo" src="assets/Instagram_icon.png.webp" alt="Instagram" />
+						</a>
 
-                <h1>Welcome <br> to my <br> Portfolio</h1>
+						<a href="https://github.com/hrltKillian" target="_blank">
+							<img class="social_logo" src="assets/logo_github.png" alt="Github" />
+						</a>
+					</div>
+				</div>
 
-                <a href="https://github.com/hrltKillian" target="_blank"><img class="social_logo socials_desktop"
-                        src="assets/logo_github.png" alt="Github"></a>
-            </div>
+				<div>
+					<h2 id="me">Who am I ?</h2>
 
-        </div>
-        <div class="profile">
-            <div>
-                <div class="socials_mobile">
-                    <a href="https://www.instagram.com/hrlt.kiki/?hl=fr" target="_blank">
-                        <img class="social_logo" src="assets/Instagram_icon.png.webp" alt="Instagram">
-                    </a>
+					<div class="back_to_front desktop_style">
+						<img id="pfp" src="assets/smiley2.png" alt="Profile Picture" />
 
-                    <a href="https://github.com/hrltKillian" target="_blank"><img class="social_logo"
-                            src="assets/logo_github.png" alt="Github"></a>
-                </div>
-            </div>
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod ipsa nostrum ea nihil aliquid tenetur velit a molestiae, repellendus, quia consectetur soluta totam in similique! Consectetur cupiditate perferendis non blanditiis?</p>
+					</div>
+				</div>
 
-            <div>
-                <h2 id="me">Who am I ?</h2>
+				<div>
+					<h2 id="knowledges">My Knowledges</h2>
+					<div class="back_to_front logo_content">
+						<div class="logo_line">
+							<img class="logo" src="https://www.pikpng.com/pngl/b/150-1506141_html-css-and-javascript-logo-html5-css3-js.png" alt="html css js" />
+							<img class="logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/PHP-logo.svg/2560px-PHP-logo.svg.png" alt="php" />
+						</div>
 
-                <div class="desktop_style">
-                    <img src="assets/smiley2.png" alt="Profile Picture">
+						<div class="logo_line">
+							<img class="logo" src="https://upload.wikimedia.org/wikipedia/fr/thumb/6/62/MySQL.svg/1200px-MySQL.svg.png" alt="mysql" />
+						</div>
 
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod ipsa nostrum ea nihil aliquid
-                        tenetur velit
-                        a
-                        molestiae, repellendus, quia consectetur soluta totam in similique! Consectetur cupiditate
-                        perferendis
-                        non
-                        blanditiis?
-                    </p>
-                </div>
-            </div>
+						<div class="logo_line">
+							<img class="logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/AngularJS_logo.svg/2560px-AngularJS_logo.svg.png" alt="angular" />
+							<img class="logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Symfony2.svg/1280px-Symfony2.svg.png" alt="symfony" />
+						</div>
+					</div>
+				</div>
 
-            <div>
-                <h2 id="knowledges">My Knowledges</h2>
-                <div class="logo-content">
-                    <div class="logo-line">
-                        <img class="logo"
-                            src="https://www.pikpng.com/pngl/b/150-1506141_html-css-and-javascript-logo-html5-css3-js.png"
-                            alt="html css js">
-                        <img class="logo"
-                            src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/PHP-logo.svg/2560px-PHP-logo.svg.png"
-                            alt="php">
-                    </div>
+				<div>
+					<h2 id="projects">Projects</h2>
+					<section>
+						<article class="project">
+							<img src="assets/abeille.png" alt="project1" />
+							<details onclick="display_projects_content_child1()">
+								<summary>Titre projet 1</summary>
+								<p>Description projet 1 Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis possimus a, earum eius adipisci consequatur quam soluta aut! Dicta reprehenderit ab illum. Doloremque omnis eaque incidunt, officiis modi quae suscipit?
+								</p>
+							</details>
+							
+						</article>
 
-                    <div class="logo-line">
-                        <img class="logo"
-                            src="https://upload.wikimedia.org/wikipedia/fr/thumb/6/62/MySQL.svg/1200px-MySQL.svg.png"
-                            alt="mysql">
-                    </div>
+						<article class="project">
+							<img src="assets/chat.png" alt="project2" />
+							<details onclick="display_projects_content_child2()">
+								<summary>Titre projet 2</summary>
+								<p>Description projet 2 Lorem ipsum dolor sit, amet consectetur adipisicing elit. In libero quos repellendus aperiam saepe sint aliquam officiis, deserunt voluptatibus quas eos sed voluptatem consequuntur optio possimus minima tempora magni ipsam.</p>
+							</details>
+						</article>
 
-                    <div class="logo-line">
-                        <img class="logo"
-                            src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/AngularJS_logo.svg/2560px-AngularJS_logo.svg.png"
-                            alt="angular">
-                        <img class="logo"
-                            src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Symfony2.svg/1280px-Symfony2.svg.png"
-                            alt="symfony">
-                    </div>
-                </div>
-            </div>
+						<article class="project">
+							<img src="assets/smiley1.png" alt="project3" />
+							<details onclick="display_projects_content_child3()">
+								<summary>Titre projet 3</summary>
+								<p>Description projet 3 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla fugiat totam quo tempora magni excepturi, repellendus fuga officia, reprehenderit, officiis dolor consequuntur in repellat omnis vitae accusamus velit natus inventore!</p>
+							</details>
+						</article>
+					</section>
+					<div class="projects_content">
+						<p>Description projet 1 Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus nisi reprehenderit excepturi aliquid a sequi culpa itaque animi quisquam sed inventore odio, dolor sint fugit quod odit, debitis voluptates qui.</p>
+						<p>Description projet 2 Lorem ipsum dolor sit, amet consectetur adipisicing elit. In libero quos repellendus aperiam saepe sint aliquam officiis, deserunt voluptatibus quas eos sed voluptatem consequuntur optio possimus minima tempora magni ipsam.</p>
+						<p>Description projet 3 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla fugiat totam quo tempora magni excepturi, repellendus fuga officia, reprehenderit, officiis dolor consequuntur in repellat omnis vitae accusamus velit natus inventore!</p>
+					</div>
+				</div>
 
-            <div>
-                <h2 id="projects">Projects</h2>
-                <div class="desktop_style project">
-                    <img src="assets\abeille.png" alt="project1">
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nulla at aliquid, dolor est nisi
-                        placeat
-                        nobis quae cumque numquam accusamus in delectus? Possimus excepturi est omnis, a voluptatem
-                        dolorum
-                        mollitia!</p>
-                </div>
+				<div class="studies">
+					<h2 id="studies">Studies</h2>
+					<div class="first_studie no_gap_effect back_to_front desktop_style">
+						<p>baccalaureate <br />with good honors <br />in 2020</p>
+						<img src="assets/graduate-png.webp" alt="graduate" />
+					</div>
+					<div class="back_to_front desktop_reverse_style">
+						<p>DonkeySchool in 2024</p>
+						<img src="assets/graduate-png.webp" alt="graduate" />
+					</div>
+				</div>
 
-                <hr>
+				<div class="contact">
+					<h2 id="contact">Contact</h2>
 
-                <div class="desktop_reverse_style project">
-                    <img src="assets\chat.png" alt="project2">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat ab repudiandae tenetur earum
-                        architecto explicabo praesentium, possimus labore? Provident, tempora culpa! Velit dolorum
-                        consectetur ipsa nemo atque. Nisi, illum voluptatum.</p>
-                </div>
+					<div class="contact_socials">
+						<a href="https://www.instagram.com/hrlt.kiki/?hl=fr" target="_blank"><img class="social_logo socials_desktop" src="assets/Instagram_icon.png.webp" alt="Instagram" /></a>
 
-                <hr>
+						<a href="https://github.com/hrltKillian" target="_blank"><img class="social_logo socials_desktop" src="assets/logo_github.png" alt="Github" /></a>
+					</div>
 
-                <div class="desktop_style project">
-                    <img src="assets\smiley1.png" alt="project3">
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate dolor, unde obcaecati
-                        doloribus
-                        eius ducimus fugit natus consequuntur consectetur quo dolore sit numquam explicabo tempore
-                        expedita
-                        eum illum dolorem veniam.</p>
-                </div>
-            </div>
+					<form action="#">
+						<label for="header">Email header</label>
+						<input type="text" name="header" id="header" placeholder="I need a website..." />
+						<label for="email">Your Email</label>
+						<input type="email" name="email" id="email" placeholder="example@gmail.com" />
+						<label for="message">Your request</label>
+						<textarea name="message" id="message" cols="30" rows="10" placeholder="Hi, I need to build a website. Can you help me ?"></textarea>
+						<input type="submit" value="Send Email" />
+					</form>
+				</div>
+			</div>
+			<footer>
+				<p>© 2024 Killian Herlant</p>
+			</footer>
+		</main>
+	</body>
 
-            <div class="studies">
-                <h2 id="studies">Studies</h2>
-                <div class="desktop_style">
-                    <p>baccalaureate <br>with good honors <br>in 2020</p>
-                    <img src="assets/graduate-png.webp" alt="graduate">
-                </div>
-                <div class="desktop_reverse_style">
-                    <p>DonkeySchool in 2024</p>
-                    <img src="assets/graduate-png.webp" alt="graduate">
-                </div>
-            </div>
+	<script>
+		function close_burger_nav() {
+			var checkbox = document.getElementById("menu");
+			if (checkbox.checked) {
+				checkbox.checked = false;
+			}
+		}
 
-            <div class="contact">
-                <h2 id="contact">Contact</h2>
+		var projects_content = document.querySelector(".projects_content");
 
-                <div class="contact_socials">
-                    <a href="https://www.instagram.com/hrlt.kiki/?hl=fr" target="_blank"><img
-                            class="social_logo socials_desktop" src="assets/Instagram_icon.png.webp"
-                            alt="Instagram"></a>
+		var project1 = document.querySelector(".project:nth-child(1)");
+		var project2 = document.querySelector(".project:nth-child(2)");
+		var project3 = document.querySelector(".project:nth-child(3)");
 
-                    <a href="https://github.com/hrltKillian" target="_blank"><img class="social_logo socials_desktop"
-                            src="assets/logo_github.png" alt="Github"></a>
-                </div>
+		var projects_content_child_1 = document.querySelector(".projects_content p:nth-child(1)");
+		var projects_content_child_2 = document.querySelector(".projects_content p:nth-child(2)");
+		var projects_content_child_3 = document.querySelector(".projects_content p:nth-child(3)");
+		function display_projects_content_child1() {
+			if (screen.width > 600) {
+				if (projects_content.style.display === "block" && (projects_content_child_2.style.display === "block" || projects_content_child_3.style.display === "block")) {
+					projects_content_child_2.style.display = "none";
+					projects_content_child_3.style.display = "none";
+					projects_content_child_1.style.display = "block";
 
-                <form action="#">
-                    <label for="header">Email header</label>
-                    <input type="text" name="header" id="header" placeholder="I need a website...">
-                    <label for="email">Your Email</label>
-                    <input type="email" name="email" id="email" placeholder="example@gmail.com">
-                    <label for="message">Your request</label>
-                    <textarea name="message" id="message" cols="30" rows="10"
-                        placeholder="Hi, I need to build a website. Can you help me ?"></textarea>
-                    <input type="submit" value="Send Email">
-                </form>
-            </div>
-        </div>
-        <footer>
-            <p>© 2024 Killian Herlant</p>
-        </footer>
-    </main>
-</body>
+					projects_content.style.borderTopLeftRadius = "0px";
+					projects_content.style.borderTopRightRadius = "50px";
 
-<script>
-    function closeBurgerNav() {
-        var checkbox = document.getElementById("menu");
-        if (checkbox.checked) {
-            checkbox.checked = false;
-        }
-    }
-</script>
+					projects_content.style.textAlign = "left";
 
+					project1.style.borderBottomLeftRadius = "0px";
+					project1.style.borderBottomRightRadius = "0px";
+
+					project2.style.borderBottomLeftRadius = "50px";
+					project2.style.borderBottomRightRadius = "50px";
+
+					project3.style.borderBottomLeftRadius = "50px";
+					project3.style.borderBottomRightRadius = "50px";
+				} else if (projects_content.style.display === "block") {
+					projects_content.style.display = "none";
+
+					project1.style.borderBottomLeftRadius = "50px";
+					project1.style.borderBottomRightRadius = "50px";
+				} else {
+					projects_content.style.display = "block";
+
+					projects_content_child_1.style.display = "block";
+					projects_content_child_2.style.display = "none";
+					projects_content_child_3.style.display = "none";
+
+					projects_content.style.borderTopLeftRadius = "0px";
+					projects_content.style.borderTopRightRadius = "50px";
+
+					projects_content.style.textAlign = "left";
+
+					project1.style.borderBottomLeftRadius = "0px";
+					project1.style.borderBottomRightRadius = "0px";
+				}
+			}
+		}
+
+		function display_projects_content_child2() {
+			if (screen.width > 600) {
+				if (projects_content.style.display === "block" && (projects_content_child_1.style.display === "block" || projects_content_child_3.style.display === "block")) {
+					projects_content_child_1.style.display = "none";
+					projects_content_child_3.style.display = "none";
+					projects_content_child_2.style.display = "block";
+
+					projects_content.style.borderTopLeftRadius = "50px";
+					projects_content.style.borderTopRightRadius = "50px";
+
+					projects_content.style.textAlign = "center";
+
+					project1.style.borderBottomLeftRadius = "50px";
+					project1.style.borderBottomRightRadius = "50px";
+
+					project2.style.borderBottomLeftRadius = "0px";
+					project2.style.borderBottomRightRadius = "0px";
+
+					project3.style.borderBottomLeftRadius = "50px";
+					project3.style.borderBottomRightRadius = "50px";
+				} else if (projects_content.style.display === "block") {
+					projects_content.style.display = "none";
+
+					project2.style.borderBottomLeftRadius = "50px";
+					project2.style.borderBottomRightRadius = "50px";
+				} else {
+					projects_content.style.display = "block";
+
+					projects_content_child_1.style.display = "none";
+					projects_content_child_2.style.display = "block";
+					projects_content_child_3.style.display = "none";
+
+					projects_content.style.borderTopLeftRadius = "50px";
+					projects_content.style.borderTopRightRadius = "50px";
+
+					projects_content.style.textAlign = "center";
+
+					project2.style.borderBottomLeftRadius = "0px";
+					project2.style.borderBottomRightRadius = "0px";
+				}
+			}
+		}
+
+		function display_projects_content_child3() {
+			if (screen.width > 600) {
+				if (projects_content.style.display === "block" && (projects_content_child_1.style.display === "block" || projects_content_child_2.style.display === "block")) {
+					projects_content_child_1.style.display = "none";
+					projects_content_child_2.style.display = "none";
+					projects_content_child_3.style.display = "block";
+
+					projects_content.style.borderTopLeftRadius = "50px";
+					projects_content.style.borderTopRightRadius = "0px";
+
+					projects_content.style.textAlign = "right";
+
+					project1.style.borderBottomLeftRadius = "50px";
+					project1.style.borderBottomRightRadius = "50px";
+
+					project2.style.borderBottomLeftRadius = "50px";
+					project2.style.borderBottomRightRadius = "50px";
+
+					project3.style.borderBottomLeftRadius = "0px";
+					project3.style.borderBottomRightRadius = "0px";
+				} else if (projects_content.style.display === "block") {
+					projects_content.style.display = "none";
+
+					project3.style.borderBottomLeftRadius = "50px";
+					project3.style.borderBottomRightRadius = "50px";
+				} else {
+					projects_content.style.display = "block";
+
+					projects_content_child_1.style.display = "none";
+					projects_content_child_2.style.display = "none";
+					projects_content_child_3.style.display = "block";
+
+					projects_content.style.borderTopLeftRadius = "50px";
+					projects_content.style.borderTopRightRadius = "0px";
+
+					projects_content.style.textAlign = "right";
+
+					project3.style.borderBottomLeftRadius = "0px";
+					project3.style.borderBottomRightRadius = "0px";
+				}
+			}
+		}
+	</script>
 </html>
