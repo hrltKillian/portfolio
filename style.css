@@ -5,6 +5,7 @@ html {
     font-size: 2vw;
     background-color: #495057;
     scroll-behavior: smooth;
+    user-select: none;
 }
 
 body {
@@ -51,16 +52,19 @@ a {
     transition: text-shadow 1.5s ease;
 }
 
-nav ul li a:hover, details summary:hover {
+nav ul li a:hover,
+details summary:hover {
     text-shadow: #FFC300 0px 0px 10px;
     transition: text-shadow 0.5s ease;
 }
 
-nav ul li a:hover::before, details summary:hover::before {
+nav ul li a:hover::before,
+details summary:hover::before {
     transform: scaleX(1);
 }
 
-nav ul li a::before, details summary::before {
+nav ul li a::before,
+details summary::before {
     content: "";
     position: absolute;
     display: block;
@@ -104,7 +108,10 @@ footer {
     border-radius: 0px 0px 100px 100px;
 }
 
-input[type="text"], input[type="email"], textarea, input:last-child {
+input[type="text"],
+input[type="email"],
+textarea,
+input:last-child {
     border-color: #495057;
     border-radius: 15px;
     background-color: #212529;
@@ -113,40 +120,56 @@ input[type="text"], input[type="email"], textarea, input:last-child {
     transition: all 1.5s ease;
 }
 
-input[type="text"]:hover, input[type="email"]:hover, textarea:hover, input:last-child:hover {
+input:last-child {
+    text-align: center;
+}
+
+input[type="text"]:hover,
+input[type="email"]:hover,
+textarea:hover,
+input:last-child:hover,
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus,
+input:last-child:focus {
     border-color: #FFC300;
     box-shadow: #FFC300 0px 0px 40px;
     background-color: #F8F9FA;
-    color: #FFC300;
-    text-shadow: #212529 2px 2px 1px;
+    color: #212529;
+    text-shadow: #FFC300 2px 2px 1px;
     transition: all 0.3s ease;
 }
 
-input:last-child:hover {
+input:last-child:hover,
+input:last-child:focus {
     background-color: #FFC300;
     color: #212529;
     text-shadow: #212529 0px 0px 0px;
 }
 
-input:hover::placeholder, textarea:hover::placeholder {
+input:hover::placeholder,
+textarea:hover::placeholder,
+input:focus::placeholder,
+textarea:focus::placeholder {
     font-family: 'Arial';
     color: #6C757D;
     text-shadow: #212529 0px 0px 0px;
 }
 
-input::placeholder, textarea::placeholder {
+input::placeholder,
+textarea::placeholder {
     font-family: 'Arial';
     color: #6C757D;
     text-shadow: #212529 0px 0px 0px;
 }
 
-details[open] > summary, details > summary {
+details[open]>summary,
+details>summary {
     list-style-type: " ";
-  }
+}
 
 details summary {
     position: relative;
-    user-select: none;
 }
 
 section {
@@ -333,7 +356,7 @@ section {
     position: relative;
 }
 
-.project details[open] summary{
+.project details[open] summary {
     text-align: center;
 }
 
@@ -422,6 +445,51 @@ section {
     margin-top: 2vw;
 }
 
+#snackbar {
+    visibility: hidden;
+    min-width: 250px;
+    margin-left: -125px;
+    background-color: #212529;
+    color: #FFC300;
+    text-align: center;
+    border-radius: 2px;
+    padding: 16px;
+    position: fixed;
+    z-index: 1;
+    left: 50%;
+    bottom: 30px;
+    font-size: 17px;
+}
+
+#snackbar.show {
+    visibility: visible;
+    animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+@keyframes fadein {
+    from {
+        bottom: 0;
+        opacity: 0;
+    }
+
+    to {
+        bottom: 30px;
+        opacity: 1;
+    }
+}
+
+@keyframes fadeout {
+    from {
+        bottom: 30px;
+        opacity: 1;
+    }
+
+    to {
+        bottom: 0;
+        opacity: 0;
+    }
+}
+
 @media (max-width: 600px) {
     html {
         font-size: 1.5rem;
@@ -501,17 +569,17 @@ section {
         padding: unset;
         border-radius: unset;
         transform: unset;
-    
+
         transition: unset;
     }
-    
+
     .back_to_front:hover {
         background-color: unset;
         color: unset;
         border: unset;
         box-shadow: unset;
         transform: unset;
-    
+
         transition: unset;
     }
 
@@ -620,7 +688,7 @@ section {
         flex-direction: row;
         justify-content: space-around;
         align-items: center;
-        
+
     }
 }
 
