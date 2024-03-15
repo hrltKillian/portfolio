@@ -81,14 +81,14 @@ details summary::before {
 h1 {
     margin-top: 10vw;
     margin-bottom: 5vw;
-    font-size: 2.5rem;
+    font-size: 3.5rem;
 }
 
 h2 {
     margin-top: 7vw;
     margin-bottom: 7vw;
     scroll-margin-top: 15vw;
-    font-size: 2rem;
+    font-size: 3rem;
     color: #FFC300;
     -webkit-text-stroke-width: 2px;
     -webkit-text-stroke-color: #495057;
@@ -109,7 +109,6 @@ footer {
 }
 
 input[type="text"],
-input[type="email"],
 textarea,
 input:last-child {
     border-color: #495057;
@@ -120,16 +119,18 @@ input:last-child {
     transition: all 1.5s ease;
 }
 
+input[type="text"] {
+    margin-bottom: 3vw;
+}
+
 input:last-child {
     text-align: center;
 }
 
 input[type="text"]:hover,
-input[type="email"]:hover,
 textarea:hover,
 input:last-child:hover,
 input[type="text"]:focus,
-input[type="email"]:focus,
 textarea:focus,
 input:last-child:focus {
     border-color: #FFC300;
@@ -172,11 +173,21 @@ details summary {
     position: relative;
 }
 
+details p {
+    display: none;
+}
+
 section {
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
     margin: -10vw 0;
+    gap: 2vw;
+}
+
+span {
+    font-weight: bold;
+    color: #FFC300;
 }
 
 .back_to_front {
@@ -509,17 +520,18 @@ section {
     h1 {
         margin-top: 20vw;
         margin-bottom: 10vw;
-        font-size: 3rem;
+        font-size: 3.5rem;
     }
 
     h2 {
         margin-top: 30vw;
         margin-bottom: 15vw;
         scroll-margin-top: 40vw;
+        font-size: 3rem;
     }
 
     p {
-        font-size: 1rem;
+        font-size: 1.2rem;
     }
 
     main {
@@ -540,12 +552,20 @@ section {
         display: block;
     }
 
+    input[type="text"] {
+        margin-bottom: 5vw;
+    }
+
     section {
         display: flex;
         flex-direction: column;
         align-items: center;
         margin: 0vw 0;
         gap: 20vw;
+    }
+
+    details p {
+        display: block;
     }
 
     .project {
